@@ -1,0 +1,977 @@
+/* Header For All Pages */
+
+/* iPhone 5/SE and iPod */
+/* Handle range from 320 x 568 and lower */
+@media screen and (max-width: 320px) {
+
+    header {
+        height: 100%;
+        width: 100%;
+    }
+
+    #header-content-div {
+        align-items: center;
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 100px 4fr 2fr 2fr;
+        height: 568px;
+        justify-content: space-between;
+        margin: auto;
+        width: 90%;
+    }
+
+    #title-link-div {
+        align-items: center;
+        display: flex;
+        flex-direction: row;
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 1;
+        grid-row-end: 2;
+        height: 100%;
+        justify-content: space-between;
+        margin: auto;
+        width: 100%;
+    }
+
+    #title-a {
+        color: var(--on-background-color);
+        font-family: 'Raleway', sans-serif;
+        font-size: 22px;
+        font-style: normal;
+        font-weight: 700;
+        letter-spacing: normal;
+        line-height: 32px;
+        margin: 0px;
+        text-decoration: none;
+    }
+
+    #menu-button-div {
+        align-items: center;
+        display: flex;
+        flex-direction: row;
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 1;
+        grid-row-end: 2;
+        height: 100%;
+        justify-content: right;
+        margin: auto;
+        width: 100%;
+    }
+
+    #menu-button {
+        background-color: var(--background-color);
+        border: hidden;
+        cursor: pointer;
+        visibility: visible;
+    }
+
+    #menu-img {
+        align-items: center;
+        color: var(--on-background-color);
+        display: flex;
+        flex-direction: column;
+        height: 26px;
+        justify-content: center;
+        margin: auto;
+        width: 26px;
+    }
+
+    #nav-div {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        grid-column-start: 1;
+        grid-column-end: 3;
+        grid-row-start: 2;
+        grid-row-end: 3;
+        height: 100%;
+        justify-content: space-evenly;
+        margin: auto;
+        visibility: hidden;
+        width: 100%;
+    }
+
+    #us-a, #locations-a {
+        color: var(--on-background-color);
+        font-family: 'Raleway', sans-serif;
+        font-size: 28px;
+        font-style: normal;
+        font-weight: 400;
+        letter-spacing: normal;
+        line-height: 28px;
+        margin: 0px;
+        text-decoration: none;
+    }
+
+    #social-div {
+        align-items: center;
+        display: flex;
+        flex-direction: row;
+        grid-column-start: 1;
+        grid-column-end: 3;
+        grid-row-start: 3;
+        grid-row-end: 4;
+        height: 100%;
+        justify-content: space-evenly;
+        margin: auto;
+        visibility: hidden;
+        width: 100%;
+    }
+
+    #fb-a, #tw-a, #ig-a {
+        color: var(--on-background-color);
+        font-family: 'Raleway', sans-serif;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        letter-spacing: normal;
+        line-height: 28px;
+        margin: 0px;
+        text-decoration: none;
+    }
+
+    #reserve-div {
+        align-items: center;
+        display: flex;
+        flex-direction: row;
+        grid-column-start: 1;
+        grid-column-end: 3;
+        grid-row-start: 4;
+        grid-row-end: 5;
+        height: 100%;
+        justify-content: center;
+        margin: auto;
+        visibility: hidden;
+        width: 100%;
+    }
+
+    #reserve-a {
+        align-items: center;
+        background-color: var(--on-background-color);
+        border: solid 1px var(--background-color);
+        border-radius: 300px;
+        color: var(--background-color);
+        display: flex;
+        flex-direction: row;
+        font-family: 'Raleway', sans-serif;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        height: 18px;
+        justify-content: center;
+        letter-spacing: normal;
+        margin: 0px;
+        padding: 18px 30px;
+        text-decoration: none;
+    }
+
+}
+
+/* Cell Phone */
+/* Handle common ranges from 360 x 640 to 480 x 853 */
+@media screen and (min-width: 321px) and (max-width: 480px) {
+
+    header {
+        height: 100%;
+        width: 100%;
+    }
+
+    #header-content-div {
+        align-items: center;
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 100px 4fr 2fr 2fr;
+        height: 640px;
+        justify-content: space-between;
+        margin: auto;
+        width: 90%;
+    }
+
+    #title-link-div {
+        align-items: center;
+        display: flex;
+        flex-direction: row;
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 1;
+        grid-row-end: 2;
+        height: 100%;
+        justify-content: space-between;
+        margin: auto;
+        width: 100%;
+    }
+
+    #title-a {
+        color: var(--on-background-color);
+        font-family: 'Raleway', sans-serif;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 700;
+        letter-spacing: normal;
+        line-height: 33px;
+        margin: 0px;
+        text-decoration: none;
+    }
+
+    #menu-button-div {
+        align-items: center;
+        display: flex;
+        flex-direction: row;
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 1;
+        grid-row-end: 2;
+        height: 100%;
+        justify-content: right;
+        margin: auto;
+        width: 100%;
+    }
+
+    #menu-button {
+        background-color: var(--background-color);
+        border: hidden;
+        cursor: pointer;
+        visibility: visible;
+    }
+
+    #menu-img {
+        align-items: center;
+        color: var(--on-background-color);
+        display: flex;
+        flex-direction: column;
+        height: 26px;
+        justify-content: center;
+        margin: auto;
+        width: 26px;
+    }
+
+    #nav-div {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        grid-column-start: 1;
+        grid-column-end: 3;
+        grid-row-start: 2;
+        grid-row-end: 3;
+        height: 100%;
+        justify-content: space-evenly;
+        margin: auto;
+        visibility: hidden;
+        width: 100%;
+    }
+
+    #us-a, #locations-a {
+        color: var(--on-background-color);
+        font-family: 'Raleway', sans-serif;
+        font-size: 28px;
+        font-style: normal;
+        font-weight: 400;
+        letter-spacing: normal;
+        line-height: 28px;
+        margin: 0px;
+        text-decoration: none;
+    }
+
+    #social-div {
+        align-items: center;
+        display: flex;
+        flex-direction: row;
+        grid-column-start: 1;
+        grid-column-end: 3;
+        grid-row-start: 3;
+        grid-row-end: 4;
+        height: 100%;
+        justify-content: space-evenly;
+        margin: auto;
+        visibility: hidden;
+        width: 100%;
+    }
+
+    #fb-a, #tw-a, #ig-a {
+        color: var(--on-background-color);
+        font-family: 'Raleway', sans-serif;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        letter-spacing: normal;
+        line-height: 28px;
+        margin: 0px;
+        text-decoration: none;
+    }
+
+    #reserve-div {
+        align-items: center;
+        display: flex;
+        flex-direction: row;
+        grid-column-start: 1;
+        grid-column-end: 3;
+        grid-row-start: 4;
+        grid-row-end: 5;
+        height: 100%;
+        justify-content: center;
+        margin: auto;
+        visibility: hidden;
+        width: 100%;
+    }
+
+    #reserve-a {
+        align-items: center;
+        background-color: var(--on-background-color);
+        border: solid 1px var(--background-color);
+        border-radius: 300px;
+        color: var(--background-color);
+        display: flex;
+        flex-direction: row;
+        font-family: 'Raleway', sans-serif;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        height: 18px;
+        justify-content: center;
+        letter-spacing: normal;
+        margin: 0px;
+        padding: 18px 30px;
+        text-decoration: none;
+    }
+
+}
+
+/* Tablet */
+/* Handle common ranges from 600 x 960 to 800 x 1280 */
+@media screen and (min-width: 481px) and (max-width: 800px) {
+
+    header {
+        height: 100%;
+        width: 100%;
+    }
+
+    #header-content-div {
+        align-items: center;
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 100px 4fr 2fr 2fr;
+        height: 960px;
+        justify-content: space-between;
+        margin: auto;
+        width: 90%;
+    }
+
+    #title-link-div {
+        align-items: center;
+        display: flex;
+        flex-direction: row;
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 1;
+        grid-row-end: 2;
+        height: 100%;
+        justify-content: space-between;
+        margin: auto;
+        width: 100%;
+    }
+
+    #title-a {
+        color: var(--on-background-color);
+        font-family: 'Raleway', sans-serif;
+        font-size: 28px;
+        font-style: normal;
+        font-weight: 700;
+        letter-spacing: normal;
+        line-height: 38px;
+        margin: 0px;
+        text-decoration: none;
+    }
+
+    #menu-button-div {
+        align-items: center;
+        display: flex;
+        flex-direction: row;
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 1;
+        grid-row-end: 2;
+        height: 100%;
+        justify-content: right;
+        margin: auto;
+        width: 100%;
+    }
+
+    #menu-button {
+        background-color: var(--background-color);
+        border: hidden;
+        cursor: pointer;
+        visibility: visible;
+    }
+
+    #menu-img {
+        align-items: center;
+        color: var(--on-background-color);
+        display: flex;
+        flex-direction: column;
+        height: 28px;
+        justify-content: center;
+        margin: auto;
+        width: 28px;
+    }
+
+    #nav-div {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        grid-column-start: 1;
+        grid-column-end: 3;
+        grid-row-start: 2;
+        grid-row-end: 3;
+        height: 100%;
+        justify-content: space-evenly;
+        margin: auto;
+        visibility: hidden;
+        width: 100%;
+    }
+
+    #us-a, #locations-a {
+        color: var(--on-background-color);
+        font-family: 'Raleway', sans-serif;
+        font-size: 39px;
+        font-style: normal;
+        font-weight: 400;
+        letter-spacing: normal;
+        line-height: 28px;
+        margin: 0px;
+        text-decoration: none;
+    }
+
+    #social-div {
+        align-items: center;
+        display: flex;
+        flex-direction: row;
+        grid-column-start: 1;
+        grid-column-end: 3;
+        grid-row-start: 3;
+        grid-row-end: 4;
+        height: 100%;
+        justify-content: space-evenly;
+        margin: auto;
+        visibility: hidden;
+        width: 100%;
+    }
+
+    #fb-a, #tw-a, #ig-a {
+        color: var(--on-background-color);
+        font-family: 'Raleway', sans-serif;
+        font-size: 19px;
+        font-style: normal;
+        font-weight: 400;
+        letter-spacing: normal;
+        line-height: 28px;
+        margin: 0px;
+        text-decoration: none;
+    }
+
+    #reserve-div {
+        align-items: center;
+        display: flex;
+        flex-direction: row;
+        grid-column-start: 1;
+        grid-column-end: 3;
+        grid-row-start: 4;
+        grid-row-end: 5;
+        height: 100%;
+        justify-content: center;
+        margin: auto;
+        visibility: hidden;
+        width: 100%;
+    }
+
+    #reserve-a {
+        align-items: center;
+        background-color: var(--on-background-color);
+        border: solid 1px var(--background-color);
+        border-radius: 300px;
+        color: var(--background-color);
+        display: flex;
+        flex-direction: row;
+        font-family: 'Raleway', sans-serif;
+        font-size: 19px;
+        font-style: normal;
+        font-weight: 500;
+        height: 60px;
+        justify-content: center;
+        letter-spacing: normal;
+        margin: 0px;
+        padding: 18px 30px;
+        text-decoration: none;
+    }
+
+}
+
+/* Laptop */
+/* Handle common ranges from 1024 x 1366 to 1112 x 834 */
+@media screen and (min-width: 801px) and (max-width: 1112px) {
+
+    header {
+        height: 100%;
+        width: 100%;
+    }
+
+    #header-content-div {
+        align-items: center;
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 100px 4fr 2fr 2fr;
+        height: 834px;
+        justify-content: space-between;
+        margin: auto;
+        width: 90%;
+    }
+
+    #title-link-div {
+        align-items: center;
+        display: flex;
+        flex-direction: row;
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 1;
+        grid-row-end: 2;
+        height: 100%;
+        justify-content: space-between;
+        margin: auto;
+        width: 100%;
+    }
+
+    #title-a {
+        color: var(--on-background-color);
+        font-family: 'Raleway', sans-serif;
+        font-size: 33px;
+        font-style: normal;
+        font-weight: 700;
+        letter-spacing: normal;
+        line-height: 45px;
+        margin: 0px;
+        text-decoration: none;
+    }
+
+    #menu-button-div {
+        align-items: center;
+        display: flex;
+        flex-direction: row;
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 1;
+        grid-row-end: 2;
+        height: 100%;
+        justify-content: right;
+        margin: auto;
+        width: 100%;
+    }
+
+    #menu-button {
+        background-color: var(--background-color);
+        border: hidden;
+        cursor: pointer;
+        visibility: visible;
+    }
+
+    #menu-img {
+        align-items: center;
+        color: var(--on-background-color);
+        display: flex;
+        flex-direction: column;
+        height: 32px;
+        justify-content: center;
+        margin: auto;
+        width: 32px;
+    }
+
+    #nav-div {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        grid-column-start: 1;
+        grid-column-end: 3;
+        grid-row-start: 2;
+        grid-row-end: 3;
+        height: 100%;
+        justify-content: space-evenly;
+        margin: auto;
+        visibility: hidden;
+        width: 100%;
+    }
+
+    #us-a, #locations-a {
+        color: var(--on-background-color);
+        font-family: 'Raleway', sans-serif;
+        font-size: 61px;
+        font-style: normal;
+        font-weight: 400;
+        letter-spacing: normal;
+        line-height: 28px;
+        margin: 0px;
+        text-decoration: none;
+    }
+
+    #social-div {
+        align-items: center;
+        display: flex;
+        flex-direction: row;
+        grid-column-start: 1;
+        grid-column-end: 3;
+        grid-row-start: 3;
+        grid-row-end: 4;
+        height: 100%;
+        justify-content: space-evenly;
+        margin: auto;
+        visibility: hidden;
+        width: 100%;
+    }
+
+    #fb-a, #tw-a, #ig-a {
+        color: var(--on-background-color);
+        font-family: 'Raleway', sans-serif;
+        font-size: 19px;
+        font-style: normal;
+        font-weight: 400;
+        letter-spacing: normal;
+        line-height: 28px;
+        margin: 0px;
+        text-decoration: none;
+    }
+
+    #reserve-div {
+        align-items: center;
+        display: flex;
+        flex-direction: row;
+        grid-column-start: 1;
+        grid-column-end: 3;
+        grid-row-start: 4;
+        grid-row-end: 5;
+        height: 100%;
+        justify-content: center;
+        margin: auto;
+        visibility: hidden;
+        width: 100%;
+    }
+
+    #reserve-a {
+        align-items: center;
+        background-color: var(--on-background-color);
+        border: solid 1px var(--background-color);
+        border-radius: 300px;
+        color: var(--background-color);
+        display: flex;
+        flex-direction: row;
+        font-family: 'Raleway', sans-serif;
+        font-size: 19px;
+        font-style: normal;
+        font-weight: 500;
+        height: 60px;
+        justify-content: center;
+        letter-spacing: normal;
+        margin: 0px;
+        padding: 18px 30px;
+        text-decoration: none;
+    }
+
+}
+
+/* Desktop */
+/* Handle common width ranges from 1113 to 1799 */
+@media screen and (min-width: 1113px) and (max-width: 1799px) {
+
+    header {
+        height: 100%;
+        width: 100%;
+    }
+
+    #header-content-div {
+        align-items: center;
+        display: flex;
+        flex-direction: row;
+        height: 100px;
+        justify-content: center;
+        margin: auto;
+        width: 90%;
+    }
+
+    #title-link-div {
+        align-items: center;
+        display: flex;
+        flex-direction: row;
+        height: 100%;
+        justify-content: space-between;
+        margin: auto;
+        width: 100%;
+    }
+
+    #title-a {
+        color: var(--on-background-color);
+        font-family: 'Raleway', sans-serif;
+        font-size: 29px;
+        font-style: normal;
+        font-weight: 700;
+        letter-spacing: normal;
+        line-height: 41px;
+        margin: 0px;
+        text-decoration: none;
+    }
+
+    #menu-button-div {
+        align-items: center;
+        display: flex;
+        flex-direction: row;
+        height: 100%;
+        justify-content: right;
+        margin: auto;
+        width: 100%;
+    }
+
+    #menu-button {
+        background-color: var(--background-color);
+        border: hidden;
+        cursor: pointer;
+        visibility: hidden;
+    }
+
+    #menu-img {
+        align-items: center;
+        color: var(--on-background-color);
+        display: flex;
+        flex-direction: column;
+        height: 32px;
+        justify-content: center;
+        margin: auto;
+        width: 32px;
+    }
+
+    #nav-div {
+        align-items: center;
+        display: flex;
+        flex-direction: row;
+        height: 100%;
+        justify-content: space-evenly;
+        margin: auto;
+        visibility: visible;
+        width: 100%;
+    }
+
+    #us-a, #locations-a {
+        color: var(--on-background-color);
+        font-family: 'Raleway', sans-serif;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        letter-spacing: normal;
+        line-height: 28px;
+        margin: 0px;
+        text-decoration: none;
+    }
+
+    #social-div {
+        align-items: center;
+        display: flex;
+        flex-direction: row;
+        height: 100%;
+        justify-content: space-evenly;
+        margin: auto;
+        visibility: visible;
+        width: 100%;
+    }
+
+    #fb-a, #tw-a, #ig-a {
+        color: var(--on-background-color);
+        font-family: 'Raleway', sans-serif;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        letter-spacing: normal;
+        line-height: 16px;
+        margin: 0px;
+        text-decoration: none;
+    }
+
+    #reserve-div {
+        align-items: center;
+        display: flex;
+        flex-direction: row;
+        height: 100%;
+        justify-content: center;
+        margin: auto;
+        visibility: visible;
+        width: 100%;
+    }
+
+    #reserve-a {
+        align-items: center;
+        background-color: var(--on-background-color);
+        border: solid 1px var(--background-color);
+        border-radius: 300px;
+        color: var(--background-color);
+        display: flex;
+        flex-direction: row;
+        font-family: 'Raleway', sans-serif;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        height: 19px;
+        justify-content: center;
+        letter-spacing: 0.32px;
+        margin: 0px;
+        padding: 18px 30px;
+        text-decoration: none;
+    }
+
+}
+
+/* Oversize Desktop */
+/* Handle common width ranges from 1800 and up */
+@media screen and (min-width: 1800px) {
+
+    header {
+        height: 100%;
+        width: 100%;
+    }
+
+    #header-content-div {
+        align-items: center;
+        display: flex;
+        flex-direction: row;
+        height: 100px;
+        justify-content: center;
+        margin: auto;
+        width: 90%;
+    }
+
+    #title-link-div {
+        align-items: center;
+        display: flex;
+        flex-direction: row;
+        height: 100%;
+        justify-content: space-between;
+        margin: auto;
+        width: 100%;
+    }
+
+    #title-a {
+        color: var(--on-background-color);
+        font-family: 'Raleway', sans-serif;
+        font-size: 29px;
+        font-style: normal;
+        font-weight: 700;
+        letter-spacing: normal;
+        line-height: 41px;
+        margin: 0px;
+        text-decoration: none;
+    }
+
+    #menu-button-div {
+        align-items: center;
+        display: flex;
+        flex-direction: row;
+        height: 100%;
+        justify-content: right;
+        margin: auto;
+        width: 100%;
+    }
+
+    #menu-button {
+        background-color: var(--background-color);
+        border: hidden;
+        cursor: pointer;
+        visibility: hidden;
+    }
+
+    #menu-img {
+        align-items: center;
+        color: var(--on-background-color);
+        display: flex;
+        flex-direction: column;
+        height: 32px;
+        justify-content: center;
+        margin: auto;
+        width: 32px;
+    }
+
+    #nav-div {
+        align-items: center;
+        display: flex;
+        flex-direction: row;
+        height: 100%;
+        justify-content: space-evenly;
+        margin: auto;
+        visibility: visible;
+        width: 100%;
+    }
+
+    #us-a, #locations-a {
+        color: var(--on-background-color);
+        font-family: 'Raleway', sans-serif;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        letter-spacing: normal;
+        line-height: 28px;
+        margin: 0px;
+        text-decoration: none;
+    }
+
+    #social-div {
+        align-items: center;
+        display: flex;
+        flex-direction: row;
+        height: 100%;
+        justify-content: space-evenly;
+        margin: auto;
+        visibility: visible;
+        width: 100%;
+    }
+
+    #fb-a, #tw-a, #ig-a {
+        color: var(--on-background-color);
+        font-family: 'Raleway', sans-serif;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        letter-spacing: normal;
+        line-height: 18px;
+        margin: 0px;
+        text-decoration: none;
+    }
+
+    #reserve-div {
+        align-items: center;
+        display: flex;
+        flex-direction: row;
+        height: 100%;
+        justify-content: center;
+        margin: auto;
+        visibility: visible;
+        width: 100%;
+    }
+
+    #reserve-a {
+        align-items: center;
+        background-color: var(--on-background-color);
+        border: solid 1px var(--background-color);
+        border-radius: 300px;
+        color: var(--background-color);
+        display: flex;
+        flex-direction: row;
+        font-family: 'Raleway', sans-serif;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        height: 19px;
+        justify-content: center;
+        letter-spacing: 0.32px;
+        margin: 0px;
+        padding: 18px 30px;
+        text-decoration: none;
+    }
+
+}
+
+a:hover {
+    text-decoration: underline;
+}

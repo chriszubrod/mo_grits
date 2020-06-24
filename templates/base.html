@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta charset="utf-8">
+        <title>Mo' Grits</title>
+        <link rel="stylesheet" type="text/css" href="/static/style.css">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/8dd9e0ce90.js" crossorigin="anonymous"></script>
+    </head>
+    {% block content %}
+    {% endblock %}
+    <script src="{{ url_for('static', filename='index.js') }}"></script>
+</html>
