@@ -44,6 +44,7 @@ Base = automap_base()
 Base.prepare(engine, reflect=True)
 DBSession = sessionmaker(bind=engine)
 
+# SQLAlchemy classes for Object Relational Mapping
 Menu = Base.classes.menu
 Period = Base.classes.period
 
@@ -61,7 +62,7 @@ def showHome():
     '''
     return render_template('home.html')
 
-
+# App route for about page uri.
 @app.route('/about')
 def showAbout():
     '''Return about.html template.
@@ -74,7 +75,7 @@ def showAbout():
     '''
     return render_template('about.html')
 
-
+# App route for locations page uri.
 @app.route('/locations')
 def showLocations():
     '''Return locations.html template.
@@ -87,21 +88,61 @@ def showLocations():
     '''
     return render_template('locations.html')
 
-
+# App route for menu data uri.
 @app.route('/menu/<int:period_id>', methods=['GET'])
 def readMenu(period_id):
+    '''Return dictionary of menu item list.
+
+    Args:
+        period_id - integer of breakfast, lunch or dinner period.
+
+    Returns:
+        menu_dict - dictionary of lists
     '''
+    try:
+        # Create new instance of DBSession.
+        session = DBSession()
 
-    '''
-    session = DBSession()
-    items = session.query(Menu).filter(Menu.period_id == period_id).all()
-    menu_dict = {}
-    menu_list = []
-    for item in items:
-        menu_list.append({"name": item.name, "description": item.description, "price": str(item.price)})
-    menu_dict["period"] = menu_list
-    return menu_dict
+        # Use session to query database and return as list.
+        items = session\
+            .query(Menu)\
+                .filter(Menu.period_id == period_id)\
+                    .all()
+
+        # Create dictionary and list variables.
+        menu_dict = {}
+        menu_list = []
+
+        # Loop through items list, and append to menu_list.
+        for item in items:
+            menu_list.append(
+                {
+                    "name": item.name,
+                    "description": item.description,
+                    "price": str(item.price)
+                }
+            )
+
+        # Add menu_list to menu_dict.
+        menu_dict["period"] = menu_list
+
+        # Close instance of DBSession.
+        session.close()
+
+        # Return menu_dict to client.
+        return menu_dict
+
+    except Exception as e:
+        # Close instance of DBSession.
+        session.close()
+
+        # Print Exception.
+        print(e)
+
+        # Pass exit function.
+        pass
 
 
+# Used only for local development.
 if __name__ == '__main__':
     app.run(debug=True)
