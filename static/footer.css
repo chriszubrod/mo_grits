@@ -1,0 +1,104 @@
+/* Desktop */
+/* Handle common width ranges from 1113 to 1799 */
+@media screen and (min-width: 1113px) and (max-width: 1799px) {
+
+    footer {
+        display: flex;
+        flex-direction: column;
+        height: 300px;
+        width: 100%;
+    }
+
+    #footer-content-div {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        justify-content: center;
+        margin: auto;
+        width: 90%;
+    }
+
+    #footer-reserve-div {
+        align-items: center;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin: 10px;
+        width: 100%;
+    }
+
+    #footer-reserve-a {
+        align-items: center;
+        background-color: var(--on-background-color);
+        border: solid 1px var(--background-color);
+        border-radius: 300px;
+        color: var(--background-color);
+        display: flex;
+        flex-direction: row;
+        font-family: 'Raleway', sans-serif;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        height: 60px;
+        justify-content: center;
+        letter-spacing: 0.32px;
+        margin: 0px;
+        padding: 18px 30px;
+        text-decoration: none;
+    }
+
+    #footer-nav-div {
+        align-items: center;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin: 10px;
+        width: 100%;
+    }
+
+    #footer-us-a, #footer-locations-a, #footer-bc-a {
+        color: var(--on-background-color);
+        font-family: 'Raleway', sans-serif;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        letter-spacing: normal;
+        line-height: 28px;
+        margin: 0px 20px;
+        text-decoration: none;
+    }
+
+    #footer-bc-a-div {
+        align-items: center;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin: 10px;
+        width: 100%;
+    }
+
+    
+    #footer-social-div {
+        align-items: center;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin: 10px;
+        width: 100%;
+    }
+
+    #footer-fb-a, #footer-tw-a, #footer-ig-a {
+        color: var(--on-background-color);
+        font-family: 'Raleway', sans-serif;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        letter-spacing: normal;
+        line-height: 18px;
+        margin: 10px;
+        text-decoration: none;
+    }
+
+
+}

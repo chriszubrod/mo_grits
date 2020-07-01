@@ -1,0 +1,101 @@
+/* About Page */
+
+/* iPhone 5/SE and iPod */
+/* Handle range from 320 x 568 and lower */
+@media screen and (max-width: 320px) {
+
+
+}
+
+/* Cell Phone */
+/* Handle common ranges from 360 x 640 to 480 x 853 */
+@media screen and (min-width: 321px) and (max-width: 480px) {
+}
+
+/* Tablet */
+/* Handle common ranges from 600 x 960 to 800 x 1280 */
+@media screen and (min-width: 481px) and (max-width: 800px) {
+
+}
+
+/* Laptop */
+/* Handle common ranges from 1024 x 1366 to 1112 x 834 */
+@media screen and (min-width: 801px) and (max-width: 1112px) {
+}
+
+/* Desktop */
+/* Handle common width ranges from 1113 to 1799 */
+@media screen and (min-width: 1113px) and (max-width: 1799px) {
+
+    #about-main {
+        width: 100%;
+    }
+
+    #about-div {
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+        width: 90%;
+    }
+
+    #about-p-div {
+        align-items: center;
+        display: flex;
+        flex-direction: row;
+        height: 600px;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    #about-p {
+        color: var(--on-background-color);
+        font-family: 'Raleway', sans-serif;
+        font-size: 33px;
+        font-style: normal;
+        font-weight: 700;
+        letter-spacing: normal;
+        line-height: 45px;
+        text-align: start;
+    }
+
+    #about-img-p-div {
+        align-items: center;
+        display: flex;
+        flex-direction: row;
+        height: 600px;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    #grits-drink {
+        height: 400px;
+        object-fit: contain;
+    }
+
+    #about-pp-div {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        padding: 100px 0px 0px 100px;
+        width: 100%;
+    }
+
+    .about-pp {
+        color: var(--on-background-color);
+        font-family: 'Raleway', sans-serif;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        letter-spacing: normal;
+        line-height: 28px;
+        margin: 0px 0px 25px 0px;
+    }
+
+}
+
+/* Oversize Desktop */
+/* Handle common width ranges from 1800 and up */
+@media screen and (min-width: 1800px) {
+
+
+}

@@ -5,7 +5,7 @@
 @media screen and (max-width: 320px) {
 
     header {
-        height: 100%;
+        height: 100px;
         width: 100%;
     }
 
@@ -58,6 +58,7 @@
         justify-content: right;
         margin: auto;
         width: 100%;
+        z-index: 1;
     }
 
     #menu-button {
@@ -91,6 +92,7 @@
         margin: auto;
         visibility: hidden;
         width: 100%;
+        z-index: 1;
     }
 
     #us-a, #locations-a {
@@ -118,6 +120,7 @@
         margin: auto;
         visibility: hidden;
         width: 100%;
+        z-index: 1;
     }
 
     #fb-a, #tw-a, #ig-a {
@@ -145,6 +148,7 @@
         margin: auto;
         visibility: hidden;
         width: 100%;
+        z-index: 1;
     }
 
     #reserve-a {
@@ -159,7 +163,7 @@
         font-size: 18px;
         font-style: normal;
         font-weight: 400;
-        height: 18px;
+        height: 30px;
         justify-content: center;
         letter-spacing: normal;
         margin: 0px;
@@ -174,7 +178,9 @@
 @media screen and (min-width: 321px) and (max-width: 480px) {
 
     header {
-        height: 100%;
+        display: flex;
+        flex-direction: column;
+        height: 100px;
         width: 100%;
     }
 
@@ -310,7 +316,7 @@
         grid-row-start: 4;
         grid-row-end: 5;
         height: 100%;
-        justify-content: center;
+        justify-content: end;
         margin: auto;
         visibility: hidden;
         width: 100%;
@@ -328,7 +334,7 @@
         font-size: 18px;
         font-style: normal;
         font-weight: 400;
-        height: 18px;
+        height: 30px;
         justify-content: center;
         letter-spacing: normal;
         margin: 0px;
@@ -343,7 +349,9 @@
 @media screen and (min-width: 481px) and (max-width: 800px) {
 
     header {
-        height: 100%;
+        display: flex;
+        flex-direction: column;
+        height: 120px;
         width: 100%;
     }
 
@@ -479,7 +487,7 @@
         grid-row-start: 4;
         grid-row-end: 5;
         height: 100%;
-        justify-content: center;
+        justify-content: end;
         margin: auto;
         visibility: hidden;
         width: 100%;
@@ -512,7 +520,9 @@
 @media screen and (min-width: 801px) and (max-width: 1112px) {
 
     header {
-        height: 100%;
+        display: flex;
+        flex-direction: column;
+        height: 140px;
         width: 100%;
     }
 
@@ -648,7 +658,7 @@
         grid-row-start: 4;
         grid-row-end: 5;
         height: 100%;
-        justify-content: center;
+        justify-content: end;
         margin: auto;
         visibility: hidden;
         width: 100%;
@@ -681,7 +691,9 @@
 @media screen and (min-width: 1113px) and (max-width: 1799px) {
 
     header {
-        height: 100%;
+        display: flex;
+        flex-direction: column;
+        height: 160px;
         width: 100%;
     }
 
@@ -796,7 +808,7 @@
         display: flex;
         flex-direction: row;
         height: 100%;
-        justify-content: center;
+        justify-content: end;
         margin: auto;
         visibility: visible;
         width: 100%;
@@ -814,7 +826,7 @@
         font-size: 16px;
         font-style: normal;
         font-weight: 500;
-        height: 19px;
+        height: 60px;
         justify-content: center;
         letter-spacing: 0.32px;
         margin: 0px;
@@ -829,7 +841,9 @@
 @media screen and (min-width: 1800px) {
 
     header {
-        height: 100%;
+        display: flex;
+        flex-direction: column;
+        height: 160px;
         width: 100%;
     }
 
@@ -944,7 +958,7 @@
         display: flex;
         flex-direction: row;
         height: 100%;
-        justify-content: center;
+        justify-content: end;
         margin: auto;
         visibility: visible;
         width: 100%;
@@ -962,7 +976,7 @@
         font-size: 16px;
         font-style: normal;
         font-weight: 500;
-        height: 19px;
+        height: 60px;
         justify-content: center;
         letter-spacing: 0.32px;
         margin: 0px;
