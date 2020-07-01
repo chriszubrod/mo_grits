@@ -1,0 +1,38 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+    <body>
+
+        {% include 'header.html' %}
+
+        <main id="locations-main">
+
+            <div id="locations-div">
+                <div class="locations-city-div">
+                    <h2 class="locations-h2">Nashville</h2>
+                    <p class="locations">123 Anywhere Street</p>
+                    <p class="locations">Nashville, TN 99999</p>
+                    <p class="locations">Monday - Sunday</p>
+                    <p class="locations">7am - 10pm</p>
+                    <a class="directions" href="https://www.google.com/maps" target="_blank">Directions</a>
+                    <img class="grits-nashville" src="/static/nashville.jpg">
+                </div>
+                <div class="locations-city-div">
+                    <h2 class="locations-h2">Coming Soon</h2>
+                    <p class="locations">123 Next Street</p>
+                    <p class="locations">Nashville, TN 99999</p>
+                    <p class="locations">Monday - Sunday</p>
+                    <p class="locations">7am - 10pm</p>
+                    <a class="directions" href="https://www.google.com/maps" target="_blank">Directions</a>
+                    <img class="grits-nashville" src="/static/nashville.jpg">
+                </div>
+            </div>
+
+        </main>
+
+        {% include 'footer.html' %}
+
+    </body>
+
+{% endblock %}
