@@ -15,10 +15,8 @@ import json
 import requests
 import urllib
 
-SECRETS_JSON = json.loads(open(
-    'C:\\Users\\Chris\\Documents\\mo_grits\\static\\secrets.json',
-    'r')
-    .read())
+# Create public variable for secrets.
+SECRETS_JSON = json.loads(open('./static/secrets.json', 'r').read())
 
 # Create instance of Flask class, and use name of running application.
 app = Flask(__name__)
