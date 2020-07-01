@@ -4,28 +4,80 @@
 /* Handle range from 320 x 568 and lower */
 @media screen and (max-width: 320px) {
 
+    #locations-main {
+        width: 100%;
+    }
+
+    #locations-div {
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+        width: 90%;
+    }
+
+    .locations-city-div {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        margin: 50px 0px 0px 0px;
+        min-height: 600px;
+        justify-content: start;
+        width: 100%;
+    }
+
+    .locations-h2 {
+        color: var(--on-background-color);
+        font-family: 'Raleway', sans-serif;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: bold;
+        letter-spacing: normal;
+        line-height: 32px;
+        margin: 20px;
+        text-align: center;
+    }
+
+    .locations {
+        color: var(--on-background-color);
+        font-family: 'Raleway', sans-serif;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        letter-spacing: normal;
+        line-height: 28px;
+        text-align: center;
+    }
+
+    .directions {
+        align-items: center;
+        background-color: var(--on-background-color);
+        border: solid 1px var(--background-color);
+        border-radius: 300px;
+        color: var(--background-color);
+        display: flex;
+        flex-direction: row;
+        font-family: 'Raleway', sans-serif;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        height: 60px;
+        justify-content: center;
+        letter-spacing: 0.32px;
+        margin: 50px;
+        padding: 18px 30px;
+        text-decoration: none;
+    }
+
+    .grits-nashville {
+        object-fit: cover;
+        width: 100%;
+    }
 
 }
 
 /* Cell Phone */
 /* Handle common ranges from 360 x 640 to 480 x 853 */
 @media screen and (min-width: 321px) and (max-width: 480px) {
-}
-
-/* Tablet */
-/* Handle common ranges from 600 x 960 to 800 x 1280 */
-@media screen and (min-width: 481px) and (max-width: 800px) {
-
-}
-
-/* Laptop */
-/* Handle common ranges from 1024 x 1366 to 1112 x 834 */
-@media screen and (min-width: 801px) and (max-width: 1112px) {
-}
-
-/* Desktop */
-/* Handle common width ranges from 1113 to 1799 */
-@media screen and (min-width: 1113px) and (max-width: 1799px) {
 
     #locations-main {
         width: 100%;
@@ -93,6 +145,231 @@
 
     .grits-nashville {
         object-fit: cover;
+        width: 100%;
+    }
+
+}
+
+/* Tablet */
+/* Handle common ranges from 600 x 960 to 800 x 1280 */
+@media screen and (min-width: 481px) and (max-width: 800px) {
+
+    #locations-main {
+        width: 100%;
+    }
+
+    #locations-div {
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+        width: 90%;
+    }
+
+    .locations-city-div {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        margin: 50px 0px 0px 0px;
+        min-height: 600px;
+        justify-content: start;
+        width: 100%;
+    }
+
+    .locations-h2 {
+        color: var(--on-background-color);
+        font-family: 'Raleway', sans-serif;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: bold;
+        letter-spacing: normal;
+        line-height: 32px;
+        margin: 20px;
+        text-align: center;
+    }
+
+    .locations {
+        color: var(--on-background-color);
+        font-family: 'Raleway', sans-serif;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        letter-spacing: normal;
+        line-height: 28px;
+        text-align: center;
+    }
+
+    .directions {
+        align-items: center;
+        background-color: var(--on-background-color);
+        border: solid 1px var(--background-color);
+        border-radius: 300px;
+        color: var(--background-color);
+        display: flex;
+        flex-direction: row;
+        font-family: 'Raleway', sans-serif;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        height: 60px;
+        justify-content: center;
+        letter-spacing: 0.32px;
+        margin: 50px;
+        padding: 18px 30px;
+        text-decoration: none;
+    }
+
+    .grits-nashville {
+        object-fit: cover;
+        width: 100%;
+    }
+
+}
+
+/* Laptop */
+/* Handle common ranges from 1024 x 1366 to 1112 x 834 */
+@media screen and (min-width: 801px) and (max-width: 1112px) {
+
+    #locations-main {
+        width: 100%;
+    }
+
+    #locations-div {
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+        width: 90%;
+    }
+
+    .locations-city-div {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        margin: 50px 0px 0px 0px;
+        min-height: 600px;
+        justify-content: start;
+        width: 100%;
+    }
+
+    .locations-h2 {
+        color: var(--on-background-color);
+        font-family: 'Raleway', sans-serif;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: bold;
+        letter-spacing: normal;
+        line-height: 32px;
+        margin: 20px;
+        text-align: center;
+    }
+
+    .locations {
+        color: var(--on-background-color);
+        font-family: 'Raleway', sans-serif;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        letter-spacing: normal;
+        line-height: 28px;
+        text-align: center;
+    }
+
+    .directions {
+        align-items: center;
+        background-color: var(--on-background-color);
+        border: solid 1px var(--background-color);
+        border-radius: 300px;
+        color: var(--background-color);
+        display: flex;
+        flex-direction: row;
+        font-family: 'Raleway', sans-serif;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        height: 60px;
+        justify-content: center;
+        letter-spacing: 0.32px;
+        margin: 50px;
+        padding: 18px 30px;
+        text-decoration: none;
+    }
+
+    .grits-nashville {
+        object-fit: cover;
+        width: 100%;
+    }
+
+}
+
+/* Desktop */
+/* Handle common width ranges from 1113 to 1799 */
+@media screen and (min-width: 1113px) and (max-width: 1799px) {
+
+    #locations-main {
+        width: 100%;
+    }
+
+    #locations-div {
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+        max-width: 1100px;
+    }
+
+    .locations-city-div {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        margin: 50px 0px 0px 0px;
+        min-height: 600px;
+        justify-content: start;
+        width: 100%;
+    }
+
+    .locations-h2 {
+        color: var(--on-background-color);
+        font-family: 'Raleway', sans-serif;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: bold;
+        letter-spacing: normal;
+        line-height: 32px;
+        margin: 20px;
+        text-align: center;
+    }
+
+    .locations {
+        color: var(--on-background-color);
+        font-family: 'Raleway', sans-serif;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        letter-spacing: normal;
+        line-height: 28px;
+        text-align: center;
+    }
+
+    .directions {
+        align-items: center;
+        background-color: var(--on-background-color);
+        border: solid 1px var(--background-color);
+        border-radius: 300px;
+        color: var(--background-color);
+        display: flex;
+        flex-direction: row;
+        font-family: 'Raleway', sans-serif;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        height: 60px;
+        justify-content: center;
+        letter-spacing: 0.32px;
+        margin: 50px;
+        padding: 18px 30px;
+        text-decoration: none;
+    }
+
+    .grits-nashville {
+        object-fit: cover;
         position: relative;
         width: 800px;
     }
@@ -103,5 +380,73 @@
 /* Handle common width ranges from 1800 and up */
 @media screen and (min-width: 1800px) {
 
+    #locations-main {
+        width: 100%;
+    }
+
+    #locations-div {
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+        max-width: 1100px;
+    }
+
+    .locations-city-div {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        margin: 50px 0px 0px 0px;
+        min-height: 600px;
+        justify-content: start;
+        width: 100%;
+    }
+
+    .locations-h2 {
+        color: var(--on-background-color);
+        font-family: 'Raleway', sans-serif;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: bold;
+        letter-spacing: normal;
+        line-height: 32px;
+        margin: 20px;
+        text-align: center;
+    }
+
+    .locations {
+        color: var(--on-background-color);
+        font-family: 'Raleway', sans-serif;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        letter-spacing: normal;
+        line-height: 28px;
+        text-align: center;
+    }
+
+    .directions {
+        align-items: center;
+        background-color: var(--on-background-color);
+        border: solid 1px var(--background-color);
+        border-radius: 300px;
+        color: var(--background-color);
+        display: flex;
+        flex-direction: row;
+        font-family: 'Raleway', sans-serif;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        height: 60px;
+        justify-content: center;
+        letter-spacing: 0.32px;
+        margin: 50px;
+        padding: 18px 30px;
+        text-decoration: none;
+    }
+
+    .grits-nashville {
+        object-fit: cover;
+        width: 100%;
+    }
 
 }

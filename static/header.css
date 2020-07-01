@@ -522,17 +522,16 @@
     header {
         display: flex;
         flex-direction: column;
-        height: 140px;
+        height: 160px;
         width: 100%;
     }
 
     #header-content-div {
         align-items: center;
-        display: grid;
-        grid-template-columns: 50% 50%;
-        grid-template-rows: 100px 4fr 2fr 2fr;
-        height: 834px;
-        justify-content: space-between;
+        display: flex;
+        flex-direction: row;
+        height: 100px;
+        justify-content: center;
         margin: auto;
         width: 90%;
     }
@@ -541,10 +540,6 @@
         align-items: center;
         display: flex;
         flex-direction: row;
-        grid-column-start: 1;
-        grid-column-end: 2;
-        grid-row-start: 1;
-        grid-row-end: 2;
         height: 100%;
         justify-content: space-between;
         margin: auto;
@@ -554,11 +549,11 @@
     #title-a {
         color: var(--on-background-color);
         font-family: 'Raleway', sans-serif;
-        font-size: 33px;
+        font-size: 29px;
         font-style: normal;
         font-weight: 700;
         letter-spacing: normal;
-        line-height: 45px;
+        line-height: 41px;
         margin: 0px;
         text-decoration: none;
     }
@@ -567,10 +562,6 @@
         align-items: center;
         display: flex;
         flex-direction: row;
-        grid-column-start: 2;
-        grid-column-end: 3;
-        grid-row-start: 1;
-        grid-row-end: 2;
         height: 100%;
         justify-content: right;
         margin: auto;
@@ -581,7 +572,7 @@
         background-color: var(--background-color);
         border: hidden;
         cursor: pointer;
-        visibility: visible;
+        visibility: hidden;
     }
 
     #menu-img {
@@ -598,22 +589,18 @@
     #nav-div {
         align-items: center;
         display: flex;
-        flex-direction: column;
-        grid-column-start: 1;
-        grid-column-end: 3;
-        grid-row-start: 2;
-        grid-row-end: 3;
+        flex-direction: row;
         height: 100%;
         justify-content: space-evenly;
         margin: auto;
-        visibility: hidden;
+        visibility: visible;
         width: 100%;
     }
 
     #us-a, #locations-a {
         color: var(--on-background-color);
         font-family: 'Raleway', sans-serif;
-        font-size: 61px;
+        font-size: 16px;
         font-style: normal;
         font-weight: 400;
         letter-spacing: normal;
@@ -626,25 +613,21 @@
         align-items: center;
         display: flex;
         flex-direction: row;
-        grid-column-start: 1;
-        grid-column-end: 3;
-        grid-row-start: 3;
-        grid-row-end: 4;
         height: 100%;
         justify-content: space-evenly;
         margin: auto;
-        visibility: hidden;
+        visibility: visible;
         width: 100%;
     }
 
     #fb-a, #tw-a, #ig-a {
         color: var(--on-background-color);
         font-family: 'Raleway', sans-serif;
-        font-size: 19px;
+        font-size: 16px;
         font-style: normal;
         font-weight: 400;
         letter-spacing: normal;
-        line-height: 28px;
+        line-height: 16px;
         margin: 0px;
         text-decoration: none;
     }
@@ -653,14 +636,10 @@
         align-items: center;
         display: flex;
         flex-direction: row;
-        grid-column-start: 1;
-        grid-column-end: 3;
-        grid-row-start: 4;
-        grid-row-end: 5;
         height: 100%;
         justify-content: end;
         margin: auto;
-        visibility: hidden;
+        visibility: visible;
         width: 100%;
     }
 
@@ -673,12 +652,12 @@
         display: flex;
         flex-direction: row;
         font-family: 'Raleway', sans-serif;
-        font-size: 19px;
+        font-size: 16px;
         font-style: normal;
         font-weight: 500;
         height: 60px;
         justify-content: center;
-        letter-spacing: normal;
+        letter-spacing: 0.32px;
         margin: 0px;
         padding: 18px 30px;
         text-decoration: none;
@@ -704,7 +683,7 @@
         height: 100px;
         justify-content: center;
         margin: auto;
-        width: 90%;
+        width: 1100px;
     }
 
     #title-link-div {
@@ -854,7 +833,7 @@
         height: 100px;
         justify-content: center;
         margin: auto;
-        width: 90%;
+        width: 1100px;
     }
 
     #title-link-div {
