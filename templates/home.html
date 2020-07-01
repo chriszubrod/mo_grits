@@ -6,9 +6,81 @@
 
         {% include 'header.html' %}
 
-        <main>
+        <main id="home-main">
+
+            <div id="home-div">
+                <div id="home-img-div">
+                    <img id="grits-goat-cheese" src="/static/grits-goat-cheese.jpg" >
+                    <img id="grits-tomato" src="/static/grits-fried-green-tomato.jpg" >
+                </div>
+                <div id="home-about-div">
+                    <div id="home-about-h1-div">
+                        <h1 id="home-about-h1">Clever, articulate, and simple sentence here.</h1>
+                    </div>
+                    <div id="home-about-p-div">
+                        <p id="home-about-p">Simple and unique paragraph here. Two or three sentences will do perfectly.</p>
+                    </div>
+                    <div id="home-about-a-div">
+                        <a id="home-about-a" href="/about">About Us</a>
+                    </div>
+                </div>
+                <div id="home-slideshow-div">
+                    <img class="slides" src="/static/grits-bacon.jpg">
+                    <img class="slides" src="/static/grits-fried-egg.jpg">
+                    <img class="slides" src="/static/grits-shrimp.jpg">
+                </div>
+                <form id="menu-form">
+                    <div id=home-menu-div>
+                        <div id="home-menu-h2-div">
+                            <h2 id="home-menu-h2">Menu</h2>
+                        </div>
+                        <ul id="home-menu-ul">
+                            <li class="home-menu-li">
+                                <a class="home-menu-a" onclick="getMenu(1)">Breakfast</a>
+                            </li>
+                            <li class="home-menu-li">
+                                <a class="home-menu-a" onclick="getMenu(2)">Lunch</a>
+                            </li>
+                            <li class="home-menu-li">
+                                <a class="home-menu-a" onclick="getMenu(3)">Dinner</a>
+                            </li>
+                            <li class="home-menu-li">
+                                <a class="home-menu-a" onclick="getMenu(4)">Bar</a>
+                            </li>
+                        </ul>
+                        <div id="home-menu-container-div">
+
+
+                        </div>
+                    </div>
+                </form>
+                <div id="home-quote-div">
+                    <img id="grits-steak" src="/static/grits-steak.jpg">
+                    <div id="home-quote-h2-div">
+                        <h2 id="home-quote-h2">''Mo' Grits just keeps you coming back for mo'.''</p>
+                    </div>
+                </div>
+                <div id="home-locations-div">
+                    <div class="home-locations-city-div">
+                        <h2 class="home-locations-h2">Nashville</h2>
+                        <p class="home-locations">123 Anywhere Street</p>
+                        <p class="home-locations">Nashville, TN 99999</p>
+                        <p class="home-locations">Monday - Sunday</p>
+                        <p class="home-locations">7am - 10pm</p>
+                    </div>
+                    <div class="home-locations-city-div">
+                        <h2 class="home-locations-h2">Coming Soon</h2>
+                        <p class="home-locations">123 Next Street</p>
+                        <p class="home-locations">Nashville, TN 99999</p>
+                        <p class="home-locations">Monday - Sunday</p>
+                        <p class="home-locations">7am - 10pm</p>
+                    </div>
+                </div>
+            </div>
 
         </main>
+
+        {% include 'footer.html' %}
 
     </body>
 
