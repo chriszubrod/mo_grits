@@ -12,6 +12,7 @@ from sqlalchemy.ext.automap import automap_base
 from sqlalchemy.orm import sessionmaker
 
 import json
+import os
 import requests
 import urllib
 

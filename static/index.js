@@ -1,4 +1,6 @@
 const home = document.getElementById('home-div');
+const about = document.getElementById('about-div');
+const locations = document.getElementById('locations-div');
 const footer = document.getElementById('footer-content-div');
 const us_a = document.getElementById('us-a');
 const locations_a = document.getElementById('locations-a');
@@ -10,13 +12,21 @@ const reserve_a = document.getElementById('reserve-a');
 let vision = "hidden";
 
 document.addEventListener("DOMContentLoaded", function() {
-    getMenu(1);
+    if (home) {
+        getMenu(1);
+    };
 });
 
 function testNav() {
     if (vision === "hidden") {
         if (home) {
             home.style.visibility = "hidden";
+        };
+        if (about) {
+            about.style.visibility = "hidden";
+        };
+        if (locations) {
+            locations.style.visibility = "hidden";
         };
         if (footer) {
             footer.style.visibility = "hidden";
@@ -31,6 +41,12 @@ function testNav() {
     } else {
         if (home) {
             home.style.visibility = "visible";
+        };
+        if (about) {
+            about.style.visibility = "visible";
+        };
+        if (locations) {
+            locations.style.visibility = "visible";
         };
         if (footer) {
             footer.style.visibility = "visible";
