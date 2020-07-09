@@ -7,13 +7,13 @@ from flask import (flash,
                    redirect,
                    url_for)
 from flask import session as login_session
-from sqlalchemy import create_engine
 from sqlalchemy.ext.automap import automap_base
 from sqlalchemy.orm import sessionmaker
 
 import json
 import os
 import requests
+import sqlalchemy
 import urllib
 
 # Create public variable for secrets.
@@ -25,25 +25,27 @@ app = Flask(__name__)
 # Set secret_key variable.
 app.secret_key = "1!2@3#4$"
 
-# Create session and connect to database.
-params = urllib.parse.quote_plus(
-    "DRIVER={ODBC Driver 17 for SQL Server};"
-    "Server=tcp:bchristopher.database.windows.net,1433;"
-    "Database=mogrits;"
-    "Uid=" + SECRETS_JSON['db']['Uid'] + ";"
-    "Pwd=" + SECRETS_JSON['db']['Pwd'] + ";"
-    "Encrypt=yes;"
-    "TrustServerCertificate=no;"
-    "Connection Timeout=30;"
+pool = sqlalchemy.create_engine(
+    sqlalchemy.engine.url.URL(
+        "mssql+pyodbc",
+        username=SECRETS_JSON['db']['Uid'],
+        password=SECRETS_JSON['db']['Pwd'],
+        database="mogrits",
+        host="35.231.209.191",
+        port="1433",
+        query={"driver": "ODBC Driver 17 for SQL Server"},
+    ),
+    pool_size=5,
+    max_overflow=2,
+    pool_timeout=30,
+    pool_recycle=1800,
+    echo=True
 )
-engine = create_engine(
-    "mssql+pyodbc:///?odbc_connect={}".format(params)
-)
-Base = automap_base()
-Base.prepare(engine, reflect=True)
-DBSession = sessionmaker(bind=engine)
 
-# SQLAlchemy classes for Object Relational Mapping
+Base = automap_base()
+Base.prepare(pool, reflect=True)
+DBSession = sessionmaker(bind=pool)
+
 Menu = Base.classes.menu
 Period = Base.classes.period
 
@@ -132,14 +134,16 @@ def readMenu(period_id):
         return menu_dict
 
     except Exception as e:
-        # Close instance of DBSession.
-        session.close()
+        # Rollback instance of DBSession.
+        session.rollback()
 
         # Print Exception.
         print(e)
 
-        # Pass exit function.
-        pass
+    finally:
+
+        # Close instance of DBSession.
+        session.close()
 
 
 # Used only for local development.
